@@ -11,7 +11,6 @@
 .three-col-content img:hover {
 	filter: grayscale(0%);
 	animation: mouseover .3s;
-	
 }
 
 .donate {
@@ -369,9 +368,7 @@ a.logo { position: absolute; top: 0px; left: 50%; transform: translatex(-50%); l
 a.three-col-content { display: block; margin-top: 20px; background: rgb(0, 0, 0) none repeat scroll 0% 0%; }
 .three-col-content .red-cta, .search-results .red-cta { background: rgb(168, 16, 12) none repeat scroll 0% 0%; border-bottom: 2px solid rgb(224, 107, 100); padding: 13px 0px; display: block; text-align: center; color: rgb(210, 220, 224); text-transform: uppercase; font-family: Sukhumvit Tadmai,sans-serif; font-size: 14px; font-weight: 700; }
 .three-col-content:hover .gray-cta, .three-col-content:hover .red-cta { color: rgb(255, 255, 255); }
-.gray-cta a, .red-cta a, .game-details a { background: rgb(72, 83, 88) none repeat scroll 0% 0%; border-bottom: 2px solid rgb(119, 137, 145); padding: 13px 0px; display: block; text-align: center; color: rgb(210, 220, 224); text-transform: uppercase; font-family: Sukhumvit Tadmai,sans-serif; font-size: 14px; font-weight: 700; }
 .gray-cta a:hover, .red-cta a:hover, .game-details a:hover { color: rgb(255, 255, 255); }
-.red-cta a, .game-details .red-cta { background: rgb(168, 16, 12) none repeat scroll 0% 0%; border-bottom: 2px solid rgb(224, 107, 100); }
 .three-col { overflow: hidden; margin-bottom: 10px; }
 .three-col > .row > div { overflow: hidden; margin-bottom: 10px; }
 .three-col em { font-style: normal; color: rgb(166, 167, 169); line-height: 1.4em; }
@@ -772,9 +769,7 @@ a.logo { position: absolute; top: 0px; left: 50px; }
 a.three-col-content { display: block; margin-top: 20px; background: rgb(0, 0, 0) none repeat scroll 0% 0%; }
 .three-col-content .red-cta, .search-results .red-cta { background: rgb(168, 16, 12) none repeat scroll 0% 0%; border-bottom: 2px solid rgb(224, 107, 100); padding: 13px 0px; display: block; text-align: center; color: rgb(210, 220, 224); text-transform: uppercase; font-family: Sukhumvit Tadmai,sans-serif; font-size: 14px; font-weight: 700; }
 .three-col-content:hover .gray-cta, .three-col-content:hover .red-cta { color: rgb(255, 255, 255); }
-.gray-cta a, .red-cta a, .game-details a { background: rgb(72, 83, 88) none repeat scroll 0% 0%; border-bottom: 2px solid rgb(119, 137, 145); padding: 13px 0px; display: block; text-align: center; color: rgb(210, 220, 224); text-transform: uppercase; font-family: Sukhumvit Tadmai,sans-serif; font-size: 14px; font-weight: 700; }
 .gray-cta a:hover, .red-cta a:hover, .game-details a:hover { color: rgb(255, 255, 255); }
-.red-cta a, .game-details .red-cta { background: rgb(168, 16, 12) none repeat scroll 0% 0%; border-bottom: 2px solid rgb(224, 107, 100); }
 .three-col { overflow: hidden; margin-bottom: 10px; }
 .three-col > .row > div { overflow: hidden; margin-bottom: 10px; }
 .three-col em { font-style: normal; color: rgb(166, 167, 169); line-height: 1.4em; }
