@@ -40,6 +40,7 @@ $.preload("DonateHover.png");
 <script>window.ondragstart = function() { return false; } 
 </script>
 
+
 	<!-- VERSA TAG SCRIPT START -->
 
 
@@ -51,11 +52,18 @@ $.preload("DonateHover.png");
 
 <!-- GOOGLE CONVERSION PIXEL END -->
 
-
-	<div class="container">
-				
+<video autoplay loop preload="auto">
 	
-	<header id="header-games">
+	<source src="Menu_SS.mp4" type="video/mp4">
+</video>
+<audio onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 1500)">
+    <source src="559940616.ogg" type="audio/ogg" />
+	<script>
+        var audio = document.currentScript.parentElement;
+        audio.volume = 0.25;
+	</script>
+</audio>
+<header id="header-games">
 	        <div class="row">
 	        	
 	          	<div class="small-12">
@@ -64,6 +72,12 @@ $.preload("DonateHover.png");
 	            </div>
 	        </div>
     	</header>
+		
+	
+	<div class="container">
+	
+	
+	
     	<div class="row">
     		
 	    </div>
@@ -71,11 +85,14 @@ $.preload("DonateHover.png");
 	
 	
 	
-				
-	
+			
+
+
 	<div class="main-row kf">
+	
 		<section role="main">
 			<div class="row">
+			
 				<div class="small-12 hero columns">
 					<div class="small-12 large-12"><h1 id="headerText"></h1><h2 id="subText"></h2></div>
 					
@@ -114,7 +131,12 @@ $.preload("DonateHover.png");
 	</div>
 
 			
-	    <footer class="site-footer" role="contentinfo">
+	    
+				
+
+	</div>
+	
+	<footer class="site-footer" role="contentinfo">
 	        <div class="row gameFooter" style="border-top-color:# !important;">
 	        	
 	            <div class="small-12 large-12 columns right-align">
@@ -123,9 +145,6 @@ $.preload("DonateHover.png");
 				
 	        </div>
 	    </footer>		
-				
-
-	</div>
 	<!-- VERSA TAG START -->
 
 

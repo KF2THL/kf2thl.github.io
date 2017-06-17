@@ -3,6 +3,24 @@
 
 /* ::::: http://fast.fonts.net/t/1.css?apiType=css&projectid=12beac60-7eee-40d3-b887-c5aa7072735e ::::: */
 
+.site-footer {
+	background: black;
+	box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.4)
+}
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('images/Poster.jpg') no-repeat;
+  background-size: cover;
+}
+
 .top-bar .title-area { transform: translatex(-50%); left:50%; }
 .three-col-content img {
 	-webkit-filter: grayscale(100%);
@@ -32,7 +50,6 @@
 h1, h2, h3, h4, h5, h6 { text-transform: uppercase; }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
 audio:not([controls]) { display: none; height: 0px; }
-html { background: rgb(0, 0, 0) none repeat scroll 0% 0%; font-family: Helvetica,sans-serif; font-size: 14px; }
 body { margin: 0px; }
 a:focus { outline: thin dotted; }
 a:active, a:hover { outline: 0px none; }
@@ -304,7 +321,6 @@ form.custom .custom.dropdown .disabled:hover::after { display: none; }
 	font-family: "HelveticaNeue";
 	src: url('b26ccb58-f2e3-47aa-a83a-02861bf54862.eot') format("eot"), url('74649485-cd74-443e-9d54-331ccd448900.woff') format("woff"), url('feb77f4f-9e6b-4f88-909a-66199fd402ed.ttf') format("truetype"), url('2e490192-e531-4236-9c55-90daaad4a34e.svg') format("svg");
 }
-html, body { background: rgb(0, 0, 0) none repeat scroll 0% 0%; font-size: 14px; font-family: Helvetica,sans-serif; }
 ul, ol { list-style-position: outside; margin-left: 16px; }
 a, a:visited { color: rgb(210, 220, 224); }
 p { font-size: 1em; line-height: 1.4286em; margin: 0px 0px 1.4286em; color: rgb(166, 167, 169); }
@@ -317,7 +333,7 @@ h3 { font-family: Helvetica,Arial,"Lucida Grande",sans-serif; font-weight: 700; 
 .right-align { text-align: right; }
 header a { text-transform: uppercase; }
 header a:hover, header a:active { text-decoration: none; }
-#header-games { background: rgb(32, 34, 36) repeat-x scroll center top; }
+#header-games { background: rgb(32, 34, 36) repeat-x scroll center top; box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.4)}
 a.masthead { font-family: HelveticaNeueBC,Helvetica,Arial,"Lucida Grande",sans-serif; color: rgb(255, 255, 255); position: absolute; top: 16px; right: 0px; }
 a.masthead::after { content: url('more-games-arrow.png'); margin: 0px 0px 0px 4px; }
 a.masthead:hover, a.masthead:active { text-decoration: underline; }
@@ -393,8 +409,6 @@ a.three-col-content { display: block; margin-top: 20px; background: rgb(0, 0, 0)
 	.three-col-content img, .three-col-content img:active, .three-col-content img:visited { filter: grayscale(0%); }
 }
 @media only screen and (min-width: 768px) {
-	.main-row { padding-top: 30px; background: rgb(0, 0, 0) url('killing-floor-bg.jpg') no-repeat scroll center top / 100% auto; }
-	.main-row.kf { padding-top: 705px; background: rgb(0, 0, 0) url('kf_home_nav-background.jpg') no-repeat scroll center top / 100% auto; }
 	.top-bar .title-area { height: 63px; }
 	.top-bar { height: 58px; width: 100%; float: left; }
 	a.logo { position: relative; left: 5px; }
@@ -447,7 +461,6 @@ a.three-col-content { display: block; margin-top: 20px; background: rgb(0, 0, 0)
 .contact-form input:required:valid + .form_hint::before { color: rgb(40, 146, 31); }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
 audio:not([controls]) { display: none; height: 0px; }
-html { background: rgb(0, 0, 0) none repeat scroll 0% 0%; font-family: Helvetica,sans-serif; font-size: 14px; }
 body { margin: 0px; }
 a:focus { outline: thin dotted; }
 a:active, a:hover { outline: 0px none; }
@@ -705,7 +718,6 @@ form.custom .custom.dropdown .disabled:hover::after { display: none; }
 	font-family: "HelveticaNeue";
 	src: url('b26ccb58-f2e3-47aa-a83a-02861bf54862.eot') format("eot"), url('74649485-cd74-443e-9d54-331ccd448900.woff') format("woff"), url('feb77f4f-9e6b-4f88-909a-66199fd402ed.ttf') format("truetype"), url('2e490192-e531-4236-9c55-90daaad4a34e.svg') format("svg");
 }
-html, body { background: rgb(0, 0, 0) none repeat scroll 0% 0%; font-size: 14px; font-family: Helvetica,sans-serif; }
 ul, ol { list-style-position: outside; margin-left: 16px; }
 a, a:visited { color: rgb(210, 220, 224); }
 p { font-size: 1em; line-height: 1.4286em; margin: 0px 0px 1.4286em; color: rgb(166, 167, 169); }
@@ -799,8 +811,6 @@ a.three-col-content { display: block; margin-top: 20px; background: rgb(0, 0, 0)
 
 .top-bar { height: 58px; width: 100% !important; float: left; }
 @media only screen and (min-width: 768px) {
-	.main-row { padding-top: 30px; background: rgb(0, 0, 0) url('killing-floor-bg.jpg') no-repeat scroll center top / 100% auto; }
-	.main-row.kf { padding-top: 50px; background: rgb(0, 0, 0) url('kf_home_nav-background.jpg') no-repeat scroll center top / 100% auto; }
 	.top-bar .title-area { height: 63px; }
 	
 	a.logo { position: relative; left: 5px; }
@@ -855,7 +865,6 @@ a.three-col-content { display: block; margin-top: 20px; background: rgb(0, 0, 0)
 .contact-form input:required:valid + .form_hint::before { color: rgb(40, 146, 31); }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
 audio:not([controls]) { display: none; height: 0px; }
-html { background: rgb(0, 0, 0) none repeat scroll 0% 0%; font-family: Helvetica,sans-serif; font-size: 14px; }
 body { margin: 0px; }
 a:focus { outline: thin dotted; }
 a:active, a:hover { outline: 0px none; }
@@ -889,8 +898,7 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0px none; padding: 0
 	background-size:     106.5%; }
 }
 @media only screen and (min-width: 769px) {
-	.main-row.kf { background: rgb(0, 0, 0) url('kf2_bg01.jpg') no-repeat scroll center top; 
-	background-size:     106.5%; }
+
 }
 #age-gate { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(0, 0, 0); background-position: center 100px; background-repeat: no-repeat; z-index: 9999; }
 #age-gate section { margin: 0px; padding: 0px; display: block; position: relative; }
