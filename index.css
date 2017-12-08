@@ -7,27 +7,14 @@
 	background: black;
 	box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.4)
 }
-video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
- background: url('images/Poster.jpg') no-repeat;
-  background-size: cover;
-}
 
 .top-bar .title-area { transform: translatex(-50%); left:50%; }
 .three-col-content img {
-	-webkit-filter: grayscale(100%);
+	-webkit-filter: brightness(85%);
     animation: mouseout .3s;
 }
 .three-col-content img:hover {
-	filter: grayscale(0%);
+	filter: brightness(100%);
 	animation: mouseover .3s;
 }
 
@@ -38,12 +25,12 @@ video {
 	background: url(donatehover.png);
 }
 @keyframes mouseover {
-    from {filter: grayscale(100%);}
-    to {filter: grayscale(0%);}
+    from {filter: brightness(85%);}
+    to {filter: brightness(100%);}
 }
 @keyframes mouseout {
-    from {filter: grayscale(0%);}
-    to {filter: grayscale(100%);}
+    from {filter: brightness(100%);}
+    to {filter: brightness(85%);}
 }
 
 
@@ -328,7 +315,9 @@ h1 { font-family: Helvetica,Arial,"Lucida Grande",sans-serif; color: rgb(188, 19
 h2 { font-family: Helvetica,Arial,"Lucida Grande",sans-serif; font-weight: 700; color: rgb(210, 220, 224); font-size: 1.2857em; line-height: 1.1111em; margin-top: 1.1111em; margin-bottom: 0em; }
 h3 { font-family: Helvetica,Arial,"Lucida Grande",sans-serif; font-weight: 700; color: rgb(90, 90, 95); font-size: 1.2857em; line-height: 1.1111em; margin-top: 1.1111em; margin-bottom: 0em; }
 .hide { display: none; }
-.main-row { min-height: 440px; background-size: 100% auto; }
+.main-row { min-height: 440px; background-size: 103% auto; 
+	background: url(kf2_bg01.jpg);
+	background-repeat:no-repeat;}
 .left-align { text-align: left; }
 .right-align { text-align: right; }
 header a { text-transform: uppercase; }
@@ -725,7 +714,7 @@ h1 { font-family: Helvetica,Arial,"Lucida Grande",sans-serif; color: rgb(188, 19
 h2 { font-family: Helvetica,Arial,"Lucida Grande",sans-serif; font-weight: 700; color: rgb(210, 220, 224); font-size: 1.2857em; line-height: 1.1111em; margin-top: 1.1111em; margin-bottom: 0em; }
 h3 { font-family: Helvetica,Arial,"Lucida Grande",sans-serif; font-weight: 700; color: rgb(210, 221, 225); font-size: 1.2857em; line-height: 1.1111em; margin-top: 1.1111em; margin-bottom: 0em; }
 .hide { display: none; }
-.main-row { min-height: 440px; background-size: 100% auto; }
+.main-row { min-height: 440px; background-size: 103% auto; }
 .left-align { text-align: left; }
 .right-align { text-align: right; }
 header a { text-transform: uppercase; }
@@ -883,7 +872,7 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0px none; padding: 0
 }
 @media only screen and (max-width: 1200px) and (min-width: 770px) {
 	.main-row, .kf, .hero { min-height: 500px; 
-	background-size:     106.5%; }
+	background-size:     cover; }
 }
 @media only screen and (min-width: 768px) and (max-width: 871px) {
 	.main-row.kf { background: rgb(0, 0, 0) url('killing-floor-bg-large.jpg') no-repeat scroll center top / 180% auto; 
