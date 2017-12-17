@@ -2,6 +2,18 @@
 /* ::::: http://www.killingfloor2.com/css/foundation.css ::::: */
 
 /* ::::: http://fast.fonts.net/t/1.css?apiType=css&projectid=12beac60-7eee-40d3-b887-c5aa7072735e ::::: */
+html {
+	background: #000;
+}
+
+a, a:hover, a:active, a:focus {
+   outline:none !important;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
 
 .site-footer {
 	background: black;
@@ -315,8 +327,8 @@ h1 { font-family: Helvetica,Arial,"Lucida Grande",sans-serif; color: rgb(188, 19
 h2 { font-family: Helvetica,Arial,"Lucida Grande",sans-serif; font-weight: 700; color: rgb(210, 220, 224); font-size: 1.2857em; line-height: 1.1111em; margin-top: 1.1111em; margin-bottom: 0em; }
 h3 { font-family: Helvetica,Arial,"Lucida Grande",sans-serif; font-weight: 700; color: rgb(90, 90, 95); font-size: 1.2857em; line-height: 1.1111em; margin-top: 1.1111em; margin-bottom: 0em; }
 .hide { display: none; }
-.main-row { min-height: 440px; background-size: 103% auto; 
-	background: url(kf2_bg01.jpg);
+.main-row { min-height: 440px; background-size: 100% auto; 
+	background: url(KF2_KrampusChristmas.jpg);
 	background-repeat:no-repeat;}
 .left-align { text-align: left; }
 .right-align { text-align: right; }
@@ -387,14 +399,14 @@ a.three-col-content { display: block; margin-top: 20px; background: rgb(0, 0, 0)
 .search-small { display: none; }
 @media only screen and (max-device-width: 320px) {
 	.main-row { padding-top: 20px; background: rgb(0, 0, 0) url('mobile-bg.jpg') no-repeat scroll center top / 100% auto; }
-	.main-row.kf { padding-top: 100px; background: rgb(0, 0, 0) url('kf_home_nav-background-320.jpg') no-repeat scroll center top / 100% auto; }
+	.main-row.kf { padding-top: 100px; background: rgb(0, 0, 0) url('KF2_KrampusChristmas.jpg') no-repeat scroll center top / 100% auto; }
 	.top-bar { overflow: hidden; }
 	#header-games a.logo img { width: 200px; }
 	.gameFooter p { font-size: 0.96em; text-align: left; }
 }
 @media only screen and (min-width: 321px) and (max-width: 768px) {
 	.main-row { padding-top: 30px; background: rgb(0, 0, 0) url('tablet-bg.jpg') no-repeat scroll center top / 100% auto; }
-	.main-row.kf { padding-top: 305px; background: rgb(0, 0, 0) url('kf_home_nav-background-768.jpg') no-repeat scroll center top / 100% auto; }
+	.main-row.kf { padding-top: 305px; background: rgb(0, 0, 0) url('KF2_KrampusChristmas.jpg') no-repeat scroll center top / 100% auto; }
 	.three-col-content img, .three-col-content img:active, .three-col-content img:visited { filter: grayscale(0%); }
 }
 @media only screen and (min-width: 768px) {
@@ -714,7 +726,7 @@ h1 { font-family: Helvetica,Arial,"Lucida Grande",sans-serif; color: rgb(188, 19
 h2 { font-family: Helvetica,Arial,"Lucida Grande",sans-serif; font-weight: 700; color: rgb(210, 220, 224); font-size: 1.2857em; line-height: 1.1111em; margin-top: 1.1111em; margin-bottom: 0em; }
 h3 { font-family: Helvetica,Arial,"Lucida Grande",sans-serif; font-weight: 700; color: rgb(210, 221, 225); font-size: 1.2857em; line-height: 1.1111em; margin-top: 1.1111em; margin-bottom: 0em; }
 .hide { display: none; }
-.main-row { min-height: 440px; background-size: 103% auto; }
+.main-row { min-height: 440px; background-size: 100% auto; }
 .left-align { text-align: left; }
 .right-align { text-align: right; }
 header a { text-transform: uppercase; }
@@ -784,7 +796,7 @@ a.three-col-content { display: block; margin-top: 20px; background: rgb(0, 0, 0)
 .search-small { display: none; }
 @media only screen and (max-width: 320px) {
 	.main-row { padding-top: 20px; background: rgb(0, 0, 0) url('mobile-bg.jpg') no-repeat scroll center top / 100% auto; }
-	.main-row.kf { padding-top: 100px; background: rgb(0, 0, 0) url('kf_home_nav-background-320.jpg') no-repeat scroll center top / 100% auto; }
+	.main-row.kf { padding-top: 100px; background: rgb(0, 0, 0) url('KF2_KrampusChristmas.jpg') no-repeat scroll center top / 100% auto; }
 	.top-bar { overflow: hidden; }
 	#header-games a.logo img { width: 254px; }
 	.gameFooter p { font-size: 0.96em; text-align: left; }
@@ -792,7 +804,7 @@ a.three-col-content { display: block; margin-top: 20px; background: rgb(0, 0, 0)
 @media only screen and (min-width: 321px) and (max-width: 768px) {
 	#header-games a.logo img { height: 58px; left: 20px; max-width:357px; }
 	.main-row { padding-top: 30px; background: rgb(0, 0, 0) url('tablet-bg.jpg') no-repeat scroll center top / 100% auto; }
-	.main-row.kf { padding-top: 305px; background: rgb(0, 0, 0) url('kf_home_nav-background-768.jpg') no-repeat scroll center top / 100% auto; }
+	.main-row.kf { padding-top: 305px; background: rgb(0, 0, 0) url('KF2_KrampusChristmas.jpg') no-repeat scroll center top / 100% auto; }
 	.three-col-content img, .three-col-content img:active, .three-col-content img:visited { filter: grayscale(0%); }
 	.flex-next { opacity: 0.7; right: 35%; }
 	.flex-prev { opacity: 0.7; left: 35%; }
@@ -875,16 +887,16 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0px none; padding: 0
 	background-size:     cover; }
 }
 @media only screen and (min-width: 768px) and (max-width: 871px) {
-	.main-row.kf { background: rgb(0, 0, 0) url('killing-floor-bg-large.jpg') no-repeat scroll center top / 180% auto; 
-	background-size:     106.5%; }
+	.main-row.kf { background: rgb(0, 0, 0) url('KF2_KrampusChristmas.jpg') no-repeat scroll center top / 180% auto; 
+	background-size:     100%; }
 }
 @media only screen and (max-width: 320px) {
-	.main-row.kf { background: rgb(0, 0, 0) url('kf2_bg01_sm.jpg') no-repeat scroll center top; 
-	background-size:     106.5%; }
+	.main-row.kf { background: rgb(0, 0, 0) url('KF2_KrampusChristmas.jpg') no-repeat scroll center top; 
+	background-size:     100%; }
 }
 @media only screen and (min-width: 321px) and (max-width: 768px) {
-	.main-row.kf { background: rgb(0, 0, 0) url('kf2_bg01_md.jpg') no-repeat scroll center top; 
-	background-size:     106.5%; }
+	.main-row.kf { background: rgb(0, 0, 0) url('KF2_KrampusChristmas.jpg') no-repeat scroll center top; 
+	background-size:     100%; }
 }
 @media only screen and (min-width: 769px) {
 
