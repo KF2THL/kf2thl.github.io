@@ -1,0 +1,103 @@
+@font-face{font-family:text-security-disc;src:url(text-security-disc.eot);src:url(text-security-disc.eot?#iefix) format('embedded-opentype'),url(text-security-disc.woff) format('woff'),url(text-security-disc.ttf) format('truetype'),url(text-security-disc.svg#text-security) format('svg')}
+input#password {
+	text-security:disc;
+    -webkit-text-security:disc;
+    -moz-text-security:disc;
+	font-family: "text-security-disc", "Kanit";
+}
+.ba-slider {
+  position: relative;
+  overflow: hidden;
+  margin: 3em 0 5em 0;
+}
+.ba-slider img {
+  width: 100%;
+  display: block;
+  cursor: default !important;
+}
+.resize {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  cursor: e-resize !important;
+}
+.handle {
+  /* Thin line seperator */
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  margin-left: -1px;
+  padding: 0 2px;
+  background: rgba(255, 255, 255, 0.75);
+  cursor: ew-resize;
+  cursor: e-resize !important;
+  transition: background 0.25s ease-in-out;
+}
+.handle.draggable {
+  background: #e6ac00 !important;
+  cursor: e-resize !important;
+}
+.handle:hover {
+  background: #e6ac00 !important;
+  cursor: e-resize !important;
+}
+.handle:after {
+  position: absolute;
+  top: 50%;
+  width: 64px;
+  height: 64px;
+  margin: -32px 0 0 -32px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  line-height: 64px;
+  background: transparent;
+  border-radius: 50%;
+  transition: all 0.25s ease-in-out;
+	display: inline-block;
+	font-family: FontAwesome;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\f07e";
+	cursor: e-resize !important;
+}
+.handle:hover:after, .handle:active:after, .handle:focus:after {
+  color: #e6ac00 ;
+  cursor: e-resize !important;
+}
+.draggable:after {
+  width: 48px;
+  height: 48px;
+  margin: -24px 0 0 -24px;
+  line-height: 48px;
+  font-size: 30px;
+  color: #e6ac00 ;
+  cursor: e-resize !important;
+}
+.ba-caption {
+	font-size: 1.15em;
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	z-index: 99;
+	text-shadow: 2px 2px #222, -2px -2px 0 #222, 2px -2px 0 #222, -2px 2px 0 #222, 1px 1px #222, -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222;
+}
+.ba-caption h3 {
+	color: #e6ac00;
+	text-shadow: 1px 1px #a8100c, -1px -1px 0 #a8100c, 1px -1px 0 #a8100c, -1px 1px 0 #a8100c;
+}
+.ba-caption .old {
+	float: left;
+	margin-left: 10px;
+}
+.ba-caption .new {
+	float: right;
+	margin-right: 10px;
+}
