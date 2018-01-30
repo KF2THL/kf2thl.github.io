@@ -59,6 +59,11 @@ logo {
 	left: 8px;
 	z-index: 9;
 }
+@media (max-width:1280px) {
+	logo {
+		display: none;
+	}
+}
 strong {
 	font-weight: 600;
 }
@@ -190,6 +195,27 @@ tfoot.thead-inverse th {
 	font-size: 2em;
 	color: #eee;
 }
+
+@media (max-width:1152px) {
+		.table-responsve {
+			font-size: 0.75em !important;
+	}
+}
+@media (max-width:896px) {
+		.table-responsve {
+			font-size: 0.6em !important;
+	}
+}
+@media (max-width:720px) {
+		.table-responsve {
+			font-size: 0.5em !important;
+	}
+}
+@media (max-width:640px) {
+		.table-responsve {
+			font-size: 0.4em !important;
+	}
+}
 .tr-dono {
 	background: #ffbf00 !important;
 	text-align: center;
@@ -245,6 +271,12 @@ footer.bg-dark .social-link {
 }
 body {
   font-family: 'Kanit';
+}
+
+@media (max-width:480px) {
+	.btn-m {
+	  width: 100% !important;
+	}
 }
 
 .btn-m {
