@@ -44,10 +44,7 @@ html {
   padding-top: 15px; 
 } 
 .center {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;  
+
 }
 img, a {
 	outline: none
