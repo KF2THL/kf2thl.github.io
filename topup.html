@@ -25,7 +25,11 @@
 	
   </head>
 
-  <body id="page-top">
+  <body id="page-top" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.8) 100%), url('img/bg-masthead.jpg');
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;">
 	<script>
 		$(function() {
 		$("#links > a").click(function(e) {
@@ -39,14 +43,14 @@
     </script>
 
     <!-- Header -->
-    <header class="masthead d-flex parallax">
+    <header class="masthead d-flex">
 	 <div id="links"><a href="https://kf2thl.github.io"><logo><img src="img/kf2thl.png" width="100%" /></logo></a></div>
 	
       <div class="container my-auto">
         <h1 class="mb-4 title text-center">บริจาคด้วย TrueMoney</h1>
                 
         <div class="row ">
-            <form method="post" action="/signin"  class="form-horizontal" role="form" align="center">
+            <form id="topupme" method="post" class="form-horizontal" role="form" align="center">
             <div class="form-group" >
                 <label class="control-label"  for="username">รหัสบัตรเงินสด TrueMoney<em>*</em></label>
                 <div>
@@ -54,36 +58,38 @@
                 </div>
             </div>  
             <div class="form-group">
-                <label class="control-label" for="password">ชื่อ<em>*</em></label>
+				<label class="control-label" for="password">ที่อยู่อีเมล<em>*</em></label>
                 <div>            
-					<input name="ref1" type="text" id="ref1" placeholder="ชื่อของคุณ" required="true" class="form-control"/>
+					<input name="ref1" type="email" id="ref1" placeholder="youremail@example.com" required="true" class="form-control"/>
                 </div>
             </div>
             <div class="form-group">
-                <label class="control-label" for="password">ที่อยู่อีเมล<em>*</em></label>
+                <label class="control-label" for="password">ชื่อ<em>*</em></label>
                 <div>            
-					<input name="ref2" type="email" id="ref2" placeholder="youremail@example.com" required="true" class="form-control"/>
-                </div>
+					<input name="ref2" type="text" id="ref2" placeholder="ชื่อของคุณ" required="true" class="form-control"/>
+				</div>
             </div>
-			<div class="form-group">
+			<div class="form-group" style="margin-bottom: 5rem;">
                 <label class="control-label" for="password">เบอร์โทรศัพท์มือถือ<em>*</em></label>
                 <div>            
-					<input type="text" maxlength="10" name="ref3" id="ref3" placeholder="0666666666" required="true" class="form-control"/>
+					<input type="text" maxlength="10" name="ref3" id="ref3" placeholder="0666666666" required="true" class="form-control" onkeydown="return ( event.ctrlKey || event.altKey 
+                    || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false)
+                    || (95<event.keyCode && event.keyCode<106)
+                    || (event.keyCode==8) || (event.keyCode==9) 
+                    || (event.keyCode>34 && event.keyCode<40)
+						|| (event.keyCode==116)
+                    || (event.keyCode==46) )" />
 					<script>
 					$("input").attr("maxlength", 4)
 					</script>
                 </div>
+				
+				<input type="button" value="บริจาค" onclick="submit_tmnc()" class="btn btn-default center mt-3 mb-3" />
             </div>
-            <div class="form-group"> 
-                <div>  
-					<input type="button" value="บริจาค" onclick="submit_tmnc()" class="btn btn-default center" />
-					
-                </div>
-            </div>     
+  
         </form>
 		<script type="text/javascript" src='https://www.tmtopup.com/topup/3rdTopup.php?uid=209513'></script>
 		</div>
-		
       </div>
       <div class="overlay"></div>
     </header>
