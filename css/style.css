@@ -8,7 +8,7 @@ input#password {
 .ba-slider {
   position: relative;
   overflow: hidden;
-  margin: 3em 0 5em 0;
+  margin: 2em 0;
 }
 .ba-slider img {
   width: 100%;
@@ -61,11 +61,11 @@ input#password {
   border-radius: 50%;
   transition: all 0.25s ease-in-out;
 	display: inline-block;
-	font-family: FontAwesome;
+	font-family: Font Awesome\ 5 Free;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	content: "\f07e";
+	content: "\f337";
 	cursor: e-resize !important;
 }
 .handle:hover:after, .handle:active:after, .handle:focus:after {
@@ -80,24 +80,4 @@ input#password {
   font-size: 30px;
   color: #e6ac00 ;
   cursor: e-resize !important;
-}
-.ba-caption {
-	font-size: 1.15em;
-	position: absolute;
-	bottom: 10px;
-	width: 100%;
-	z-index: 99;
-	text-shadow: 2px 2px #222, -2px -2px 0 #222, 2px -2px 0 #222, -2px 2px 0 #222, 1px 1px #222, -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222;
-}
-.ba-caption h3 {
-	color: #e6ac00;
-	text-shadow: 1px 1px #a8100c, -1px -1px 0 #a8100c, 1px -1px 0 #a8100c, -1px 1px 0 #a8100c;
-}
-.ba-caption .old {
-	float: left;
-	margin-left: 10px;
-}
-.ba-caption .new {
-	float: right;
-	margin-right: 10px;
 }
