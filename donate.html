@@ -52,7 +52,18 @@
             <div class="form-group" >
                 <label class="control-label"  for="username">รหัสผ่าน<em>*</em></label>
                 <div>
-					<input id="password" type="text" name="password" placeholder="รหัสผ่าน" autofocus required="true" class="form-control" autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" style="width: 180px;" />
+					<input id="myPassword" type="password" name="myPassword" placeholder="รหัสผ่าน" autofocus required="true" class="form-control" autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" style="width: 180px;" />
+					<input type="checkbox" onclick="showPassword()" style="margin-right: 1.5px;"/><span style="color:#f24640;font-size: 12px;line-height: 12px;display:inline-block;vertical-align:middle; margin: -5px 1.5px 0;pading: 0 5px 0 0">แสดงรหัสผ่าน</span>
+					<script>
+					function showPassword() {
+						var x = document.getElementById("myPassword");
+						if (x.type === "password") {
+							x.type = "text";
+						} else {
+							x.type = "password";
+						}
+					}
+					</script>
 					<input type="submit" class="decrypt-button btn btn-default center mt-3" value="ปลดล็อค"/>
                 </div>
             </div>  
@@ -95,7 +106,7 @@
     document.getElementById('form').addEventListener('submit', function(e) {
         e.preventDefault();
 
-        var passphrase = document.getElementById('password').value,
+        var passphrase = document.getElementById('myPassword').value,
             encryptedMsg = '8893f415383abd0a30376ec3d234e1d5bf1f885e15d2f29334a180c634891f11U2FsdGVkX1/Hi6//MCv3W/qC5dUJ65fR1X6+HpAjNaSSnL75dj3UdJitTwCBdw4Bvc3PQMKUYzzGZpnOw61K8e0M61lYjNk3XxctzzQFtMMzm8gHEnLQTXxr76d1wDm2q4somU4FXYLk5UdcgOL7R59OscZnEztLO8qfDha85bac3JtbJuzoZbHcP9dW+UGpSoSJkXyndu/Tl0kFacWxVfC8wv2esr1afZdRBSvFSnbpJ639mjp+MymiPcJG+T07VFMfwGLzF9x9uIdHNwXDtCukdYw0sLIXg5Npn5/VzpmBL+coO/2sM+4/o7ht+fgqaBGwLUJIs8xC18QLuXmwwDL3OzbfrFsa+tHBG9qYjHDj2uyPYz+Muazr1CAvrVpwUAfP44YNvrPGxsgAoPVK1PLq9qSYgfCSE+rYxs5M4EPSLrSP7gFMop+MiNDI98gtaErfxOO1tH8BZSiHzHTSoG2yiD0evY8jSmaNq41Xp9LFarIHupJ0IhmgQ1EkzGOnR6EqtvU++SluPQQpaEb2WhmyQcqin1RuYbSqxsGE2K+Pb9qoN/b9t0ScXZBodiNLiTw9JDYgx5kRYCDE6ovvY1edihPOmecJsaNUneHuUFl+GJZmsq3XhBJrUp4dO02Zf9KrNrGalkaeST4WxrU+xIpepswUEPZR4oJ6Z9Qns2+4AnfyPtToBpl/pnxJYBazVHUc2WORbUebuybr0AFh9SvjuYYvU9hiomL+5LZrBHFR7A0jMF0/BQ21zvsJFTn5MjKXbdxrA8l4x3IW/6nV3/NNhzjyX+dxElVhf2WlM5h/QiYHN+C+CfgNz/pINFXhanc5fGYke35MNxAiX9rFj8RTNDSWIFa9idZkubmnuSwGE2GZEFjkkF4JYByDBN7TxNKh+hTPU0WakShqXIk7G8WEhCTf1IIRJFmrYWLZTt3ZTWDJeo8h1gOWICWx0itif77QYM+ciyMREwkEeGKagii38WhBJnGm8oRZUaI8Ne3yrsiZUQ7/7teIE8bvYKSbeXhHCpuTzXiSuak+rYW9wiG3MGAJaeqRlYunzBcgJ8Lj9GNCu4grTaYEtkaw8TgmDxYJ1FuEBFuI9aqnq/oAxNzACbL6X6ISoW59ANHc96U6rFKBvUzHV6AwXqOWXzpIwOJqDU/PE5PaMO8Qqn81Z12y9UousF4geia0pZLXOtXiwbhjxtyWJD71/o/ozxlICj1aOCGFurwSzr3FlxHcJybRe3wPUf8S5jwU2czOrV+5X6Gsbb9UMbF2SCxYHtBsDo7/u7X3epozXyNWVvhiKYN5oGJwVte2l1P4KvtiDEXqCFKICI3TgIjYmBNM4WCtVieh1Ajcauh0/jNfNBWyCW4iX33AOBaQ2j7iQ/o7I7kMiAPO4lVTvFrF3srZk63TDr6gI1Bh3Gps8JH7eO3EMqE7/hgRcSfnNEdBvvIo9UD6Cl5ReH3iinSPpvv4Scn4fPPxPdzLVyADUDSABpOdkfuTrq/91IBu+fojAtTLCio/1kJ4pdQVk0+bUiFY432dmXRfMdVPYp5op4RCiIVanvubNu+mXJ7OtG0AsWmMfxtHlz8vFX6oRoJwUCgnffXxopAT5RNwg4mV91Bqr7wxW/Wd2BAf67zkZuTulL2G+U83o8xwkzWaenEJhowmVvpX1uS6+tlpvV+Sjbgm24LWhqNVdFLiB7nfbYd3O+XPKXGTHkezf/kT1PFQnXDiVngFVeoG1RLqQ6idK9J9QtWVCG541x48oJyaJM3xnUdc2WMKQNyBszxWHqngz4VvR/mF1utDTSuvMgh+3yIH9AKP54/PvIecQgTeGqDvKMbe8byWsnAcxvubwSZH5IOCGO6XYq0hNc+ZruVvg0ITY4dLNOYMAif+W/Pdzv2cwSoH5JF4gYbGx/UUuULgd+KOGOKGPHPXYZTcCZTGLml3quT13eRf4Pmhl0BWZf02y8xGWFiPatx/9LZkPRifStRHXAQDE2mLC8FZCF7eEwAlRSDipxFV0GFqQq7lVRboOeJZaysrQUPb16kaISJ5joZ6ArptO8G08XB8otgkppG8GWejSewF3bpJ3qp0gEPtKcSOh1Y2XMXvrKPsOgMXm3nnwuVAlU7lMILIwHZp2KI5Qpno2S7KuRJOKp0VsaABx6VqyXLTflQp3rwBbp6a96/FPgsvu83GtRNmXhuDlLZVJuA6UM6JVaUauliaKKcjoOxiy7xgIH7PZa2KlDfkzjGZ+szVmNGF0XnNwZpUznX7i/IDFyyU7OntxHGLNUc3uGVgOWezQOouojrhpGHuQErljcQCe1MczBN7pxah3UOvc/Zm+xqqt1fbyAoCHcP5erdVUfIcGnvMv3jB7jGptOq+/H5k4L/ddW4pw+Xp+kOIu9WoPOU9aykLcOB3nRxA3VCMD9TLBQsJtwJAP7TBCE6e/U7O+Qr9edO0pDLfzRwzaXLdMuFTck/Ah8+T/BHMjZ1VMvj3/kcILP+Ca8MubXn0cCuxAX/topWIeEJNDbb/aLM/APjobQ7gS3vt6jXipweD0J2L64b3q7MmNauvGLqFyRi3l9/kQq+W7c0n/mBqnp3XpOkG0NxFPt/r4R4qJjzp1qq9RdOJ/OpKHoq4lUmaFUFjlilVBCKfckhPqQNBeuu8I4nm0FQ5U1Kn0hmkaenlRXJUHoJpfF+gGkdNCC2fnZ7sxeveZxfas5rJu6c8Gue/2BU08T8Sf9zSxPRuEe4UXIvASrCPopHqgi/dTB8nN0BykyRw2khMV73XY3zOVPT5+tBfFm74kMBcp/9DIjy/1ZbgNHx7SZ+E2mMk3nNb6EGo7rFARwNA+F+oXAfHpNp17SggyNk19ZNklfIJDNMn0CJmLbdumUwA9twD+mBy5LPhZWqQ61oA+ju2yjLAhLgKGT0p1oE3E4LtJ9EG4BkAYRKcjOCgKzSz4dV6jkVmaA6I7EPBWwtG+vFVJUfVtsVdg3/PZXkgbELaRc5GBDAS+KKqWvVJIKwb2R8Kai2/iDQ9zqt1EA9fpL0tQ0NBjJXbcQZR21BwJjKeoj2BWsTEray4HqB7dFVP85pdpDNcZjQSmutUxcsSElsHC+GUYSlNP9dtQnjEDRTs3suHfqWNb0TtOmQ6c/Uk8sXYMtDtpH3yGgD/K0QWRzsVUX6YSAfm5HkyMxQFC9mjwau/h9qcF1xKF19elUivupdC/X+/ZvXs6JneOCBjIdQAAqg1Y/XUkvV9F7zFzaV0rbNyKQphEA7rjbcvE67pg+rtcSa5IL/v7ApFbA+G682vDtwl+Tjcc9jQA+r65bAq5Hz0HoFZ+GIdAlWCX4PLR4B0H6YB5xpo0ujm85cyP/0o9wEBVuX6M+6QYiEFd8P98UaSQndBWsMqUbkpj2Sr3rbCtm/fwxnwx8MAIoJQ4CrRXbZcyTDtTy8JoPxEkjOfn8W142aNc9eH6myCdkLY+C4NDLxTR9zoM0Ifc3RelOo41aolUrbpowJwBB55kHwsfVElZ+2wdHmlyWVp8ks7zGx470KrY8EDcbRWbx1/Wa4GvWNml/QdzRLN+pIn3GNeSABmgg/TPobHhb2npv4lnoZbpBVa2MxTYxmvDPqk+qusIP4GAvfwy99Pxwu/jmZhKe+4h6ykWTu3WtVjof0AhHZYbCQbkkdZVVBOPs2jd2lEtMQGliLvtTlLQ0CO9lxaxKgZoq7hGPgqN8Ld1bLvKub0/q/k9ca8ZYnPuITYbfV+u+PGrLVl3azud2hTxn6hgnf0dDLFqk4arBL1cI1Pwt/G9TLPh3NPy6sH0remgwvaGh4Pszcxvw==',
             encryptedHMAC = encryptedMsg.substring(0, 64),
             encryptedHTML = encryptedMsg.substring(64),
